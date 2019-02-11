@@ -15,7 +15,7 @@
 #   t.datetime "created_at", null: false
 #   t.datetime "updated_at", null: false
 
-
+Quote.create(content: "This is a test.", author: "Rach and Meg")
 Quote.create(content: "Better to remain silent and be thought a fool than to speak out and remove all doubt.", author:"Abraham Lincoln")
 Quote.create(content: "The difference between stupidity and genius is that genius has its limits.", author: "Albert Einstein")
 Quote.create(content: "The average dog is a nicer person than the average person.", author: "Andy Rooney")
@@ -23,16 +23,17 @@ Quote.create(content: "At every party there are two kinds of people – those wh
 Quote.create(content: "I always arrive late at the office, but I make up for it by leaving early.", author: "Charles Lamb")
 
 puts "quotes seeded"
+#
+# User.create(name: "Rachel", email: "rachel@gmail.com")
+# User.create(name: "Meghan", email: "meghan@gmail.com")
+#
+# puts "users seeded"
 
-User.create(name: "Rachel", email: "rachel@gmail.com")
-User.create(name: "Meghan", email: "meghan@gmail.com")
-
-puts "users seeded"
-
-Game.create(name: "First Game", user_id: 1, quote_id: 1)
-Game.create(name: "Second Game", user_id: 1, quote_id: 2)
-Game.create(name: "Third Game", user_id: 1, quote_id: 3)
-Game.create(name: "Fourth Game", user_id: 2, quote_id: 4)
-Game.create(name: "Fifth Game", user_id: 2, quote_id: 5)
+Game.create(name: "First Game", quote_id: 1)
+Game.create(name: "Second Game", quote_id: 2)
+Game.create(name: "Third Game", quote_id: 3)
+Game.create(name: "Fourth Game", quote_id: 4)
+Game.create(name: "Fifth Game", quote_id: 5)
+Game.create(name: "Fifth Game", quote_id: 6)
 
 puts "games seeded"
