@@ -1,6 +1,5 @@
 class GameSerializer < ActiveModel::Serializer
-  belongs_to :user
   belongs_to :quote
-  attributes :id, :name, :score, :user_id, :quote_id
+  attributes :id, :name, :quote_id
 
 end
