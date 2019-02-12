@@ -7,18 +7,18 @@ class Api::V1::ScoresController < ApplicationController
     end
 
       def new
-        @score = User.new
+        @score = Score.new
         render json: @score, status: :ok
       end
 
       def create
-        @score = User.create(score_params)
+        @score = Score.create(score_params)
         render json: @score, status: :ok
       end
 
         def destroy
           @score.delete
-          @score = User.find(params[:id])
+          @score = Score.find(params[:id])
         end
 
         private
