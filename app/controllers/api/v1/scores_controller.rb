@@ -24,7 +24,7 @@ class Api::V1::ScoresController < ApplicationController
         private
 
         def score_params
-          params.require(:score).permit(:game_id, :score, :username)
+          params.require(:score).permit(:id, :game_id, :score, :username)
         end
 
         # t.integer :game_id
