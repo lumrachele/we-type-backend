@@ -42,6 +42,10 @@ Quote.create(author: "Pa", content: getJoke[getJoke.keys[1]])
 Quote.create(author: "Padre", content: getJoke[getJoke.keys[1]])
 Quote.create(author: "Poppa Roach", content: getJoke[getJoke.keys[1]])
 Quote.create(author: "Big Papa", content: getJoke[getJoke.keys[1]])
+Quote.create(author: "Papa", content: getJoke[getJoke.keys[1]])
+Quote.create(author: "Daddio", content: getJoke[getJoke.keys[1]])
+Quote.create(author: "Dada", content: getJoke[getJoke.keys[1]])
+Quote.create(author: "Pop", content: getJoke[getJoke.keys[1]])
 #
 # puts q2.content
 # puts q3.content
@@ -67,5 +71,9 @@ Game.create(name: "9", quote_id: 9, imageURL:"http://www.wetpaint.com/wp-content
 Game.create(name: "10", quote_id: 10, imageURL:"https://hesselgroup.com.au/app/uploads/2018/03/Working-Dad-2-823x1024.jpg")
 Game.create(name: "11", quote_id: 11, imageURL:"https://alexraphael.files.wordpress.com/2014/01/fresh-prince.jpeg")
 Game.create(name: "12", quote_id: 12, imageURL:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/walter-white-breaking-bad-1528305352.jpg?crop=1xw:0.8888888888888888xh;center,top&resize=980:*")
+Game.create(name: "13", quote_id: 13, imageURL:"https://vignette.wikia.nocookie.net/fnl/images/e/ef/Erictaylor.jpg/revision/latest/scale-to-width-down/310?cb=20180516164004")
+Game.create(name: "14", quote_id: 14, imageURL:"https://2.bp.blogspot.com/-n8vj24P_tPg/VfcojEsWLyI/AAAAAAAALew/JXnjYyx9xAIy2-z2dj0Px2kRmBe_lRxhACKgB/s1600/sandycohentheoc.jpg")
+Game.create(name: "15", quote_id: 15, imageURL:"https://nick-intl.mtvnimages.com/uri/mgid:file:docroot:nick.com:/nick-assets/shows/images/jimmy-neutron/characters/character_large_332x363_hugh.jpg?quality=0.75&height=0&width=480&matte=true&crop=false")
+Game.create(name: "16", quote_id: 16, imageURL:"https://cld.fame10.com/image/upload/t_tn,f_auto,q_auto,$h_400,$w_620/f10/2015/09/Ty-Burrell-Modern-Family-620x400.jpg")
 
 puts "games seeded"
