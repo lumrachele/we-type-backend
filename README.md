@@ -1,6 +1,6 @@
 ## WeType: The Backend
 
-This Rails application is the backend for WeType. It provides access to the necessary API endpoints and communicates with the PostgreSQL Database. It also demonstrates use of a channel to establish an action cable connection via websockets between players of the same game. <a href=https://vimeo.com/332499170>Demo Video</a>
+This Rails application is the backend for WeType. It provides access to the necessary API endpoints and communicates with the PostgreSQL Database. <a href=https://vimeo.com/332499170>Demo Video</a>
 
 Frontend: [Weegle Frontend Repository](https://github.com/lumrachele/we-type-front-end)
 
