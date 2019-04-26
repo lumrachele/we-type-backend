@@ -29,23 +29,21 @@ To get started with this app, simply fork and clone this repository, as well as 
 There are three models used for this application:
 
 <h3>Game</h3>
+The ```Game``` model ```belongs_to``` a quote, and ```has_many``` scores. The game model is responsible for holding the image of the famous TV dad. The name attribute is not necessarily used, but could be repurposed in the future.
 
 
-
-Key Controller Methods: 
+Key Controller Methods: index, show
 
 <h3>Quote</h3>
+The ```Quote``` model has two attributes: author and content. The author is always dad, but each person calls their father something different. We seeded this data by surveying our colleagues. The content is seeded with parsed JSON from an http get request to the ["iCanHazDadJoke" API](https://icanhazdadjoke.com/api). A quote ```has_many``` games.
 
 
-
-Key Controller Methods: 
+Key Controller Methods: index
 
 <h3>Score</h3>
+The ```Score``` model ```belongs_to``` a game. It is generated upon completion of a game, so when a user finishes typing out the complete dad joke and enters their username, the frontend sends a post request to the ```ScoresController``` to create a new score instance for the current game id.
 
-
-
-Key Controller Methods: 
-
+Key Controller Methods: index, create
 
 
 # <h2>Future Development</h2>
